@@ -1,0 +1,37 @@
+#!/bin/bash
+set +x
+set -e
+. .colors.sh
+
+BASEDIR=$PWD
+. $BASEDIR/io.sh 2 4 26 "$@"
+CURDIR=`pwd`
+## INPUTS VARIABLES
+run_zip=${INPUTS1}
+__met_zip=${INPUTS2}
+
+
+## PARAMETERS VARIABLES
+start_date=${PARAMS1}
+end_date=${PARAMS2}
+dt_cfg=${PARAMS3}
+dt=${PARAMS4}
+
+
+set -xe
+
+####### WRITE YOUR INVOCATION LINE AFTER THIS COMMENT
+
+#TODO:
+#Obtain the topoflow_cfg/
+#Obtain the cfg_prefix
+
+pushd .
+/opt/conda/bin/python3 -m topoflow --cfg_directory ${RUNDIR}/topoflow_cfg/ --cfg_prefix Test1
+popd
+
+set +x
+echo -e "$(c G)[success] The model has exited with code SUCCESS"
+####### WRITE YOUR INVOCATION LINE BEFORE THIS COMMENT
+cd $BASEDIR
+. $BASEDIR/output.sh

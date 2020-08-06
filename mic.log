@@ -1,0 +1,261 @@
+mic   _utils.py          INFO     Log file created
+mic   _utils.py          INFO     OS: {'name': 'Linux', 'data': {'version': '#1 SMP Mon Jul 29 17:46:05 UTC 2019', 'release': '3.10.0-957.27.2.el7.x86_64', 'platform': 'Linux-3.10.0-957.27.2.el7.x86_64-x86_64-with-centos-7.6.1810-Core'}}
+mic   _utils.py          INFO     MIC Version: 1.3.3
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'start', 'command_parameters': {'name': {'value': 'topoflow', 'type': 'str'}, 'image': {'value': 'mosorio/topoflow:new', 'type': 'str'}}}
+mic   initialization.py  INFO     When creating base dir found base directory already exists: /home/mfosorio/topoflow/topoflow_mic/mic
+mic   initialization.py  INFO     MIC has initialized the component
+mic   initialization.py  DEBUG    OS name: linux
+mic   docker.py          INFO     Downloading and building base docker image
+mic   commands.py        DEBUG    Converting any CRLF to LF: ['mic.log', 'mic.yaml', 'Dockerfile', 'entrypoint.sh']
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/home/mfosorio/topoflow/topoflow_mic/mic/mic.yaml', 'data': {'key': 'name', 'value': 'topoflow'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/home/mfosorio/topoflow/topoflow_mic/mic/mic.yaml', 'data': {'key': 'docker_image', 'value': 'topoflow:latest'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/home/mfosorio/topoflow/topoflow_mic/mic/mic.yaml', 'data': {'key': 'framework', 'value': <Framework.GENERIC: ('general', 'mintproject/generic:latest')>}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/home/mfosorio/topoflow/topoflow_mic/mic/mic.yaml', 'data': {'key': 'container_name', 'value': 'topoflow_907fc520'}}
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'trace', 'command_parameters': {'invocation_command': {'value': ('/opt/conda/bin/python3', '-m', 'topoflow', '--cfg_directory', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg/', '--cfg_prefix', 'Test1'), 'type': 'tuple'}, 'continu': {'value': None, 'type': 'NoneType'}, 'overwrite': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Append mode: None
+mic   commands.py        INFO     trace done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'inputs', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'custom_inputs': {'value': (), 'type': 'tuple'}}}
+mic   commands.py        DEBUG    Inputs found from reprozip: ['/tmp/mint/__soil', '/tmp/mint/__met', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT', '/tmp/mint/__topo']
+mic   commands.py        DEBUG    code files found from reprozip: []
+mic   commands.py        INFO     Compressing the input directory (__soil)
+mic   commands.py        INFO     Input added: __soil
+mic   commands.py        INFO     Compressing the input directory (__met)
+mic   commands.py        INFO     Input added: __met
+mic   commands.py        INFO     Compressing the input directory (Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg)
+mic   commands.py        INFO     Input added: Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg
+mic   commands.py        INFO     Compressing the input directory (Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT)
+mic   commands.py        INFO     Input added: Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT
+mic   commands.py        INFO     Compressing the input directory (__topo)
+mic   commands.py        INFO     Input added: __topo
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'inputs', 'value': {'__soil_zip': {'path': '__soil.zip', 'format': 'zip'}, '__met_zip': {'path': '__met.zip', 'format': 'zip'}, 'test1_2015-10_to_2018-10_chirps_bilinear_cfg_zip': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg.zip', 'format': 'zip'}, 'test1_2015-10_to_2018-10_chirps_bilinear_out_zip': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT.zip', 'format': 'zip'}, '__topo_zip': {'path': '__topo.zip', 'format': 'zip'}}}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'code_files', 'value': {}}}
+mic   commands.py        INFO     inputs done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'configs', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'configuration_files': {'value': ('/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg/Test1_path_info.cfg',), 'type': 'tuple'}, 'auto_param': {'value': False, 'type': 'bool'}}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'configs', 'value': {'test1_path_info_cfg': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg/Test1_path_info.cfg', 'format': 'cfg'}}}}
+mic   commands.py        INFO     Added config file: /tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg/Test1_path_info.cfg
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'step', 'value': 2}}
+mic   commands.py        INFO     configs done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'wrapper', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   commands.py        INFO     Generating wrapper code
+mic   reprozip.py        DEBUG    Pre runner code: ''
+mic   reprozip.py        DEBUG    Runner code: '\npushd .\n/opt/conda/bin/python3 -m topoflow --cfg_directory /tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg/ --cfg_prefix Test1\npopd'
+mic   initialization.py  DEBUG    run file rendered
+mic   initialization.py  DEBUG    io file rendered
+mic   commands.py        INFO     wrapper done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'outputs', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'custom_outputs': {'value': (), 'type': 'tuple'}}}
+mic   commands.py        DEBUG    Outputs found from reprozip: ['/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-d_11.rts', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-d_11.rti', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-Q_11.txt', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-d_11.nc', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-ETrate_11.nc', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-Q_11.rti', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-u_11.rti', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-ETrate_11.nc', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-ETrate_11.rti', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-Q_11.nc', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-Q_11.bov', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-Q_11.rts', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-u_11.nc', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-d_11.bov', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-d_11.txt', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1.log', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-u_11.bov', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-u_11.nc', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-ETrate_11.rts', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-ETrate_11.txt', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-d_11.nc', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-Q_11.nc', '/tmp/mint/__topo/Baro-Gam_60sec_DEM.rtg', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-u_11.rts', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-ETrate_11.bov', '/tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-u_11.txt']
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'outputs', 'value': {'test1_2d-d_11_rts': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-d_11.rts', 'format': 'rts'}, 'test1_2d-d_11_rti': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-d_11.rti', 'format': 'rti'}, 'test1_0d-q_11_txt': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-Q_11.txt', 'format': 'txt'}, 'test1_2d-d_11_nc': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-d_11.nc', 'format': 'nc'}, 'test1_2d-etrate_11_nc': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-ETrate_11.nc', 'format': 'nc'}, 'test1_2d-q_11_rti': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-Q_11.rti', 'format': 'rti'}, 'test1_2d-u_11_rti': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-u_11.rti', 'format': 'rti'}, 'test1_0d-etrate_11_nc': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-ETrate_11.nc', 'format': 'nc'}, 'test1_2d-etrate_11_rti': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-ETrate_11.rti', 'format': 'rti'}, 'test1_0d-q_11_nc': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-Q_11.nc', 'format': 'nc'}, 'test1_2d-q_11_bov': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-Q_11.bov', 'format': 'bov'}, 'test1_2d-q_11_rts': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-Q_11.rts', 'format': 'rts'}, 'test1_0d-u_11_nc': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-u_11.nc', 'format': 'nc'}, 'test1_2d-d_11_bov': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-d_11.bov', 'format': 'bov'}, 'test1_0d-d_11_txt': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-d_11.txt', 'format': 'txt'}, 'test1_log': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1.log', 'format': 'log'}, 'test1_2d-u_11_bov': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-u_11.bov', 'format': 'bov'}, 'test1_2d-u_11_nc': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-u_11.nc', 'format': 'nc'}, 'test1_2d-etrate_11_rts': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-ETrate_11.rts', 'format': 'rts'}, 'test1_0d-etrate_11_txt': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-ETrate_11.txt', 'format': 'txt'}, 'test1_0d-d_11_nc': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-d_11.nc', 'format': 'nc'}, 'test1_2d-q_11_nc': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-Q_11.nc', 'format': 'nc'}, 'baro-gam_60sec_dem_rtg': {'path': '__topo/Baro-Gam_60sec_DEM.rtg', 'format': 'rtg'}, 'test1_2d-u_11_rts': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-u_11.rts', 'format': 'rts'}, 'test1_2d-etrate_11_bov': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_2D-ETrate_11.bov', 'format': 'bov'}, 'test1_0d-u_11_txt': {'path': 'Test1_2015-10_to_2018-10_CHIRPS_Bilinear_OUT/Test1_0D-u_11.txt', 'format': 'txt'}}}}
+mic   commands.py        INFO     outputs done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'wrapper', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   commands.py        INFO     Generating wrapper code
+mic   reprozip.py        DEBUG    Pre runner code: ''
+mic   reprozip.py        DEBUG    Runner code: '\npushd .\n/opt/conda/bin/python3 -m topoflow --cfg_directory /tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg/ --cfg_prefix Test1\npopd'
+mic   initialization.py  DEBUG    run file rendered
+mic   initialization.py  DEBUG    io file rendered
+mic   commands.py        INFO     wrapper done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'wrapper', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   commands.py        INFO     Generating wrapper code
+mic   reprozip.py        DEBUG    Pre runner code: ''
+mic   reprozip.py        DEBUG    Runner code: '\npushd .\n/opt/conda/bin/python3 -m topoflow --cfg_directory /tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg/ --cfg_prefix Test1\npopd'
+mic   initialization.py  DEBUG    run file rendered
+mic   initialization.py  DEBUG    io file rendered
+mic   commands.py        INFO     wrapper done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': None, 'type': 'NoneType'}, 'value': {'value': None, 'type': 'NoneType'}, 'overwrite': {'value': False, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        INFO     Automatically adding any parameters from trace
+mic   commands.py        ERROR    Add Parameters failed: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/mic/click_encapsulate/commands.py", line 349, in add_parameters
+    write_spec(path, PARAMETERS_KEY, spec[PARAMETERS_KEY])
+TypeError: 'NoneType' object is not subscriptable
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': None, 'type': 'NoneType'}, 'value': {'value': None, 'type': 'NoneType'}, 'overwrite': {'value': False, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        INFO     Automatically adding any parameters from trace
+mic   commands.py        ERROR    Add Parameters failed: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/mic/click_encapsulate/commands.py", line 349, in add_parameters
+    write_spec(path, PARAMETERS_KEY, spec[PARAMETERS_KEY])
+TypeError: 'NoneType' object is not subscriptable
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': None, 'type': 'NoneType'}, 'value': {'value': None, 'type': 'NoneType'}, 'overwrite': {'value': False, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        INFO     Automatically adding any parameters from trace
+mic   commands.py        ERROR    Add Parameters failed: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/mic/click_encapsulate/commands.py", line 349, in add_parameters
+    write_spec(path, PARAMETERS_KEY, spec[PARAMETERS_KEY])
+TypeError: 'NoneType' object is not subscriptable
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': 'start_date', 'type': 'str'}, 'value': {'value': 2014, 'type': 'int'}, 'overwrite': {'value': False, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Adding parameter: {'start_date': {'name': 'start_date', 'default_value': 2014, 'type': 'int', 'description': ''}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'parameters', 'value': {'start_date': {'name': 'start_date', 'default_value': 2014, 'type': 'int', 'description': ''}}}}
+mic   commands.py        INFO     add_parameters done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': 'start_date', 'type': 'str'}, 'value': {'value': '2015-10-01', 'type': 'str'}, 'overwrite': {'value': True, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Adding parameter: {'start_date': {'name': 'start_date', 'default_value': '2015-10-01', 'type': 'str', 'description': ''}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'parameters', 'value': {'start_date': {'name': 'start_date', 'default_value': '2015-10-01', 'type': 'str', 'description': ''}}}}
+mic   commands.py        INFO     add_parameters done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': 'end_date', 'type': 'str'}, 'value': {'value': '2018-10-01', 'type': 'str'}, 'overwrite': {'value': True, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Adding parameter: {'end_date': {'name': 'end_date', 'default_value': '2018-10-01', 'type': 'str', 'description': ''}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'parameters', 'value': {'start_date': {'name': 'start_date', 'default_value': '2015-10-01', 'type': 'str', 'description': ''}, 'end_date': {'name': 'end_date', 'default_value': '2018-10-01', 'type': 'str', 'description': ''}}}}
+mic   commands.py        INFO     add_parameters done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': None, 'type': 'NoneType'}, 'value': {'value': None, 'type': 'NoneType'}, 'overwrite': {'value': False, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        INFO     Automatically adding any parameters from trace
+mic   commands.py        ERROR    Add Parameters failed: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/mic/click_encapsulate/commands.py", line 349, in add_parameters
+    write_spec(path, PARAMETERS_KEY, spec[PARAMETERS_KEY])
+TypeError: 'NoneType' object is not subscriptable
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': None, 'type': 'NoneType'}, 'value': {'value': None, 'type': 'NoneType'}, 'overwrite': {'value': False, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        INFO     Automatically adding any parameters from trace
+mic   commands.py        ERROR    Add Parameters failed: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/mic/click_encapsulate/commands.py", line 349, in add_parameters
+    write_spec(path, PARAMETERS_KEY, spec[PARAMETERS_KEY])
+TypeError: 'NoneType' object is not subscriptable
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': 'dt_cfg', 'type': 'str'}, 'value': {'value': 200, 'type': 'int'}, 'overwrite': {'value': True, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Adding parameter: {'dt_cfg': {'name': 'dt_cfg', 'default_value': 200, 'type': 'int', 'description': ''}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'parameters', 'value': {'start_date': {'name': 'start_date', 'default_value': '2015-10-01', 'type': 'str', 'description': ''}, 'end_date': {'name': 'end_date', 'default_value': '2018-10-01', 'type': 'str', 'description': ''}, 'dt_cfg': {'name': 'dt_cfg', 'default_value': 200, 'type': 'int', 'description': ''}}}}
+mic   commands.py        INFO     add_parameters done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': 'dt', 'type': 'str'}, 'value': {'value': 21600.0, 'type': 'float'}, 'overwrite': {'value': True, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Adding parameter: {'dt': {'name': 'dt', 'default_value': 21600.0, 'type': 'float', 'description': ''}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'parameters', 'value': {'start_date': {'name': 'start_date', 'default_value': '2015-10-01', 'type': 'str', 'description': ''}, 'end_date': {'name': 'end_date', 'default_value': '2018-10-01', 'type': 'str', 'description': ''}, 'dt_cfg': {'name': 'dt_cfg', 'default_value': 200, 'type': 'int', 'description': ''}, 'dt': {'name': 'dt', 'default_value': 21600.0, 'type': 'float', 'description': ''}}}}
+mic   commands.py        INFO     add_parameters done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'wrapper', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   commands.py        INFO     Generating wrapper code
+mic   reprozip.py        DEBUG    Pre runner code: ''
+mic   reprozip.py        DEBUG    Runner code: '\npushd .\n/opt/conda/bin/python3 -m topoflow --cfg_directory /tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg/ --cfg_prefix Test1\npopd'
+mic   initialization.py  DEBUG    run file rendered
+mic   initialization.py  DEBUG    io file rendered
+mic   commands.py        ERROR    Wrapper failed: [Errno 2] No such file or directory: '/tmp/mint/topoflow/Test1_path_info.cfg'
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/mic/click_encapsulate/commands.py", line 576, in wrapper
+    copy_config_to_src(mic_configs, user_execution_directory, mic_directory_path / SRC_DIR)
+  File "/opt/conda/lib/python3.7/site-packages/mic/component/executor.py", line 125, in copy_config_to_src
+    shutil.copyfile(file_path, src_dir / file_path.name)
+  File "/opt/conda/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/mint/topoflow/Test1_path_info.cfg'
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'wrapper', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   commands.py        INFO     Generating wrapper code
+mic   reprozip.py        DEBUG    Pre runner code: ''
+mic   reprozip.py        DEBUG    Runner code: '\npushd .\n/opt/conda/bin/python3 -m topoflow --cfg_directory /tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg/ --cfg_prefix Test1\npopd'
+mic   initialization.py  DEBUG    run file rendered
+mic   initialization.py  DEBUG    io file rendered
+mic   commands.py        ERROR    Wrapper failed: [Errno 2] No such file or directory: '/tmp/mint/topoflow_run/Test1_path_info.cfg'
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/mic/click_encapsulate/commands.py", line 576, in wrapper
+    copy_config_to_src(mic_configs, user_execution_directory, mic_directory_path / SRC_DIR)
+  File "/opt/conda/lib/python3.7/site-packages/mic/component/executor.py", line 125, in copy_config_to_src
+    shutil.copyfile(file_path, src_dir / file_path.name)
+  File "/opt/conda/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/mint/topoflow_run/Test1_path_info.cfg'
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'wrapper', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   commands.py        INFO     Generating wrapper code
+mic   reprozip.py        DEBUG    Pre runner code: ''
+mic   reprozip.py        DEBUG    Runner code: '\npushd .\n/opt/conda/bin/python3 -m topoflow --cfg_directory /tmp/mint/Test1_2015-10_to_2018-10_CHIRPS_Bilinear_cfg/ --cfg_prefix Test1\npopd'
+mic   initialization.py  DEBUG    run file rendered
+mic   initialization.py  DEBUG    io file rendered
+mic   commands.py        INFO     wrapper done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'configs', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'configuration_files': {'value': ('/tmp/mint/run/topoflow_cfg/Test1_channels_kinematic_wave.cfg', '/tmp/mint/run/topoflow_cfg/Test1_meteorology.cfg', '/tmp/mint/run/topoflow_cfg/Test1_path_info.cfg', '/tmp/mint/run/topoflow_cfg/Test1_time_info.cfg', '/tmp/mint/run/topoflow_cfg/Test1_topoflow.cfg'), 'type': 'tuple'}, 'auto_param': {'value': False, 'type': 'bool'}}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'configs', 'value': {'test1_channels_kinematic_wave_cfg': {'path': 'run/topoflow_cfg/Test1_channels_kinematic_wave.cfg', 'format': 'cfg'}, 'test1_meteorology_cfg': {'path': 'run/topoflow_cfg/Test1_meteorology.cfg', 'format': 'cfg'}, 'test1_path_info_cfg': {'path': 'run/topoflow_cfg/Test1_path_info.cfg', 'format': 'cfg'}, 'test1_time_info_cfg': {'path': 'run/topoflow_cfg/Test1_time_info.cfg', 'format': 'cfg'}, 'test1_topoflow_cfg': {'path': 'run/topoflow_cfg/Test1_topoflow.cfg', 'format': 'cfg'}}}}
+mic   commands.py        INFO     Added config file: /tmp/mint/run/topoflow_cfg/Test1_channels_kinematic_wave.cfg
+mic   commands.py        INFO     Added config file: /tmp/mint/run/topoflow_cfg/Test1_meteorology.cfg
+mic   commands.py        INFO     Added config file: /tmp/mint/run/topoflow_cfg/Test1_path_info.cfg
+mic   commands.py        INFO     Added config file: /tmp/mint/run/topoflow_cfg/Test1_time_info.cfg
+mic   commands.py        INFO     Added config file: /tmp/mint/run/topoflow_cfg/Test1_topoflow.cfg
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'step', 'value': 2}}
+mic   commands.py        INFO     configs done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': None, 'type': 'NoneType'}, 'value': {'value': None, 'type': 'NoneType'}, 'overwrite': {'value': False, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        INFO     Automatically adding any parameters from trace
+mic   commands.py        ERROR    Add Parameters failed: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/mic/click_encapsulate/commands.py", line 349, in add_parameters
+    write_spec(path, PARAMETERS_KEY, spec[PARAMETERS_KEY])
+TypeError: 'NoneType' object is not subscriptable
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': None, 'type': 'NoneType'}, 'value': {'value': None, 'type': 'NoneType'}, 'overwrite': {'value': False, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        INFO     Automatically adding any parameters from trace
+mic   commands.py        ERROR    Add Parameters failed: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/mic/click_encapsulate/commands.py", line 349, in add_parameters
+    write_spec(path, PARAMETERS_KEY, spec[PARAMETERS_KEY])
+TypeError: 'NoneType' object is not subscriptable
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': 'start_date', 'type': 'str'}, 'value': {'value': '2015-10-01', 'type': 'str'}, 'overwrite': {'value': True, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Adding parameter: {'start_date': {'name': 'start_date', 'default_value': '2015-10-01', 'type': 'str', 'description': ''}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'parameters', 'value': {'start_date': {'name': 'start_date', 'default_value': '2015-10-01', 'type': 'str', 'description': ''}}}}
+mic   commands.py        INFO     add_parameters done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': 'end_date', 'type': 'str'}, 'value': {'value': '2018-10-01', 'type': 'str'}, 'overwrite': {'value': True, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Adding parameter: {'end_date': {'name': 'end_date', 'default_value': '2018-10-01', 'type': 'str', 'description': ''}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'parameters', 'value': {'start_date': {'name': 'start_date', 'default_value': '2015-10-01', 'type': 'str', 'description': ''}, 'end_date': {'name': 'end_date', 'default_value': '2018-10-01', 'type': 'str', 'description': ''}}}}
+mic   commands.py        INFO     add_parameters done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': 'dt_cfg', 'type': 'str'}, 'value': {'value': 200, 'type': 'int'}, 'overwrite': {'value': True, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Adding parameter: {'dt_cfg': {'name': 'dt_cfg', 'default_value': 200, 'type': 'int', 'description': ''}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'parameters', 'value': {'start_date': {'name': 'start_date', 'default_value': '2015-10-01', 'type': 'str', 'description': ''}, 'end_date': {'name': 'end_date', 'default_value': '2018-10-01', 'type': 'str', 'description': ''}, 'dt_cfg': {'name': 'dt_cfg', 'default_value': 200, 'type': 'int', 'description': ''}}}}
+mic   commands.py        INFO     add_parameters done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': 'dt', 'type': 'str'}, 'value': {'value': 21600.0, 'type': 'float'}, 'overwrite': {'value': True, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Adding parameter: {'dt': {'name': 'dt', 'default_value': 21600.0, 'type': 'float', 'description': ''}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'parameters', 'value': {'start_date': {'name': 'start_date', 'default_value': '2015-10-01', 'type': 'str', 'description': ''}, 'end_date': {'name': 'end_date', 'default_value': '2018-10-01', 'type': 'str', 'description': ''}, 'dt_cfg': {'name': 'dt_cfg', 'default_value': 200, 'type': 'int', 'description': ''}, 'dt': {'name': 'dt', 'default_value': 21600.0, 'type': 'float', 'description': ''}}}}
+mic   commands.py        INFO     add_parameters done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'inputs', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'custom_inputs': {'value': ('/tmp/mint/run', '/tmp/mint/run/__met'), 'type': 'tuple'}}}
+mic   commands.py        DEBUG    Inputs found from reprozip: ['/tmp/mint/run']
+mic   commands.py        DEBUG    code files found from reprozip: []
+mic   commands.py        INFO     Compressing the input directory (run)
+mic   commands.py        INFO     Input added: run
+mic   commands.py        INFO     Compressing the input directory (run)
+mic   commands.py        INFO     Input added: run
+mic   commands.py        INFO     Compressing the input directory (__met)
+mic   commands.py        INFO     Input added: __met
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'inputs', 'value': {'run_zip': {'path': 'run.zip', 'format': 'zip'}, '__met_zip': {'path': '__met.zip', 'format': 'zip'}}}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'code_files', 'value': {}}}
+mic   commands.py        INFO     inputs done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'outputs', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'custom_outputs': {'value': (), 'type': 'tuple'}}}
+mic   commands.py        DEBUG    Outputs found from reprozip: ['/tmp/mint/run/out/Test1_0D-Q_1.txt', '/tmp/mint/run/out/Test1_2D-u_1.nc', '/tmp/mint/run/out/Test1_0D-u_1.txt', '/tmp/mint/run/out/Test1.log', '/tmp/mint/run/out/Test1_2D-d_1.rti', '/tmp/mint/run/out/Test1_2D-d_1.rts', '/tmp/mint/run/out/Test1_2D-Q_1.rti', '/tmp/mint/run/out/Test1_0D-u_1.nc', '/tmp/mint/run/out/Test1_2D-Q_1.bov', '/tmp/mint/run/out/Test1_0D-ETrate_1.nc', '/tmp/mint/run/out/Test1_2D-ETrate_1.bov', '/tmp/mint/run/out/Test1_2D-Q_1.rts', '/tmp/mint/run/out/Test1_2D-ETrate_1.nc', '/tmp/mint/run/out/Test1_2D-u_1.rts', '/tmp/mint/run/out/Test1_0D-ETrate_1.txt', '/tmp/mint/run/out/Test1_2D-u_1.rti', '/tmp/mint/run/out/Test1_0D-Q_1.nc', '/tmp/mint/run/out/Test1_2D-ETrate_1.rts', '/tmp/mint/run/__topo/Baro-Gam_60sec_DEM.rtg', '/tmp/mint/run/out/Test1_2D-d_1.bov', '/tmp/mint/run/out/Test1_2D-u_1.bov', '/tmp/mint/run/out/Test1_0D-d_1.nc', '/tmp/mint/run/out/Test1_2D-ETrate_1.rti', '/tmp/mint/run/out/Test1_2D-Q_1.nc', '/tmp/mint/run/out/Test1_0D-d_1.txt', '/tmp/mint/run/out/Test1_2D-d_1.nc']
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'outputs', 'value': {'test1_0d-q_1_txt': {'path': 'run/out/Test1_0D-Q_1.txt', 'format': 'txt'}, 'test1_2d-u_1_nc': {'path': 'run/out/Test1_2D-u_1.nc', 'format': 'nc'}, 'test1_0d-u_1_txt': {'path': 'run/out/Test1_0D-u_1.txt', 'format': 'txt'}, 'test1_log': {'path': 'run/out/Test1.log', 'format': 'log'}, 'test1_2d-d_1_rti': {'path': 'run/out/Test1_2D-d_1.rti', 'format': 'rti'}, 'test1_2d-d_1_rts': {'path': 'run/out/Test1_2D-d_1.rts', 'format': 'rts'}, 'test1_2d-q_1_rti': {'path': 'run/out/Test1_2D-Q_1.rti', 'format': 'rti'}, 'test1_0d-u_1_nc': {'path': 'run/out/Test1_0D-u_1.nc', 'format': 'nc'}, 'test1_2d-q_1_bov': {'path': 'run/out/Test1_2D-Q_1.bov', 'format': 'bov'}, 'test1_0d-etrate_1_nc': {'path': 'run/out/Test1_0D-ETrate_1.nc', 'format': 'nc'}, 'test1_2d-etrate_1_bov': {'path': 'run/out/Test1_2D-ETrate_1.bov', 'format': 'bov'}, 'test1_2d-q_1_rts': {'path': 'run/out/Test1_2D-Q_1.rts', 'format': 'rts'}, 'test1_2d-etrate_1_nc': {'path': 'run/out/Test1_2D-ETrate_1.nc', 'format': 'nc'}, 'test1_2d-u_1_rts': {'path': 'run/out/Test1_2D-u_1.rts', 'format': 'rts'}, 'test1_0d-etrate_1_txt': {'path': 'run/out/Test1_0D-ETrate_1.txt', 'format': 'txt'}, 'test1_2d-u_1_rti': {'path': 'run/out/Test1_2D-u_1.rti', 'format': 'rti'}, 'test1_0d-q_1_nc': {'path': 'run/out/Test1_0D-Q_1.nc', 'format': 'nc'}, 'test1_2d-etrate_1_rts': {'path': 'run/out/Test1_2D-ETrate_1.rts', 'format': 'rts'}, 'baro-gam_60sec_dem_rtg': {'path': 'run/__topo/Baro-Gam_60sec_DEM.rtg', 'format': 'rtg'}, 'test1_2d-d_1_bov': {'path': 'run/out/Test1_2D-d_1.bov', 'format': 'bov'}, 'test1_2d-u_1_bov': {'path': 'run/out/Test1_2D-u_1.bov', 'format': 'bov'}, 'test1_0d-d_1_nc': {'path': 'run/out/Test1_0D-d_1.nc', 'format': 'nc'}, 'test1_2d-etrate_1_rti': {'path': 'run/out/Test1_2D-ETrate_1.rti', 'format': 'rti'}, 'test1_2d-q_1_nc': {'path': 'run/out/Test1_2D-Q_1.nc', 'format': 'nc'}, 'test1_0d-d_1_txt': {'path': 'run/out/Test1_0D-d_1.txt', 'format': 'txt'}, 'test1_2d-d_1_nc': {'path': 'run/out/Test1_2D-d_1.nc', 'format': 'nc'}}}}
+mic   commands.py        INFO     outputs done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'wrapper', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   commands.py        INFO     Generating wrapper code
+mic   reprozip.py        DEBUG    Pre runner code: ''
+mic   reprozip.py        DEBUG    Runner code: '\npushd .\n/opt/conda/bin/python3 -m topoflow --cfg_directory /tmp/mint/run/topoflow_cfg/ --cfg_prefix Test1\npopd'
+mic   initialization.py  DEBUG    run file rendered
+mic   initialization.py  DEBUG    io file rendered
+mic   commands.py        INFO     wrapper done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'run', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   executor.py        INFO     Running: ./run   -i1 /tmp/mint/mic/executions/08_05_23_45_20/src/run.zip -i2 /tmp/mint/mic/executions/08_05_23_45_20/src/__met.zip  -o1 test1_0d-q_1_txt.txt -o2 test1_2d-u_1_nc.nc -o3 test1_0d-u_1_txt.txt -o4 test1_log.log -o5 test1_2d-d_1_rti.rti -o6 test1_2d-d_1_rts.rts -o7 test1_2d-q_1_rti.rti -o8 test1_0d-u_1_nc.nc -o9 test1_2d-q_1_bov.bov -o10 test1_0d-etrate_1_nc.nc -o11 test1_2d-etrate_1_bov.bov -o12 test1_2d-q_1_rts.rts -o13 test1_2d-etrate_1_nc.nc -o14 test1_2d-u_1_rts.rts -o15 test1_0d-etrate_1_txt.txt -o16 test1_2d-u_1_rti.rti -o17 test1_0d-q_1_nc.nc -o18 test1_2d-etrate_1_rts.rts -o19 baro-gam_60sec_dem_rtg.rtg -o20 test1_2d-d_1_bov.bov -o21 test1_2d-u_1_bov.bov -o22 test1_0d-d_1_nc.nc -o23 test1_2d-etrate_1_rti.rti -o24 test1_2d-q_1_nc.nc -o25 test1_0d-d_1_txt.txt -o26 test1_2d-d_1_nc.nc  -p1 "2015-10-01" -p2 "2018-10-01" -p3 200 -p4 21600.0
+mic   executor.py        DEBUG    exe_arr: ['./run', '-i1', '/tmp/mint/mic/executions/08_05_23_45_20/src/run.zip', '-i2', '/tmp/mint/mic/executions/08_05_23_45_20/src/__met.zip', '-o1', 'test1_0d-q_1_txt.txt', '-o2', 'test1_2d-u_1_nc.nc', '-o3', 'test1_0d-u_1_txt.txt', '-o4', 'test1_log.log', '-o5', 'test1_2d-d_1_rti.rti', '-o6', 'test1_2d-d_1_rts.rts', '-o7', 'test1_2d-q_1_rti.rti', '-o8', 'test1_0d-u_1_nc.nc', '-o9', 'test1_2d-q_1_bov.bov', '-o10', 'test1_0d-etrate_1_nc.nc', '-o11', 'test1_2d-etrate_1_bov.bov', '-o12', 'test1_2d-q_1_rts.rts', '-o13', 'test1_2d-etrate_1_nc.nc', '-o14', 'test1_2d-u_1_rts.rts', '-o15', 'test1_0d-etrate_1_txt.txt', '-o16', 'test1_2d-u_1_rti.rti', '-o17', 'test1_0d-q_1_nc.nc', '-o18', 'test1_2d-etrate_1_rts.rts', '-o19', 'baro-gam_60sec_dem_rtg.rtg', '-o20', 'test1_2d-d_1_bov.bov', '-o21', 'test1_2d-u_1_bov.bov', '-o22', 'test1_0d-d_1_nc.nc', '-o23', 'test1_2d-etrate_1_rti.rti', '-o24', 'test1_2d-q_1_nc.nc', '-o25', 'test1_0d-d_1_txt.txt', '-o26', 'test1_2d-d_1_nc.nc', '-p1', '2015-10-01', '-p2', '2018-10-01', '-p3', '200', '-p4', '21600.0']
+mic   commands.py        WARNING  Run failed
+mic   commands.py        INFO     run done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'run', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   executor.py        INFO     Running: ./run   -i1 /tmp/mint/mic/executions/08_05_23_46_49/src/run.zip -i2 /tmp/mint/mic/executions/08_05_23_46_49/src/__met.zip  -o1 test1_0d-q_1_txt.txt -o2 test1_2d-u_1_nc.nc -o3 test1_0d-u_1_txt.txt -o4 test1_log.log -o5 test1_2d-d_1_rti.rti -o6 test1_2d-d_1_rts.rts -o7 test1_2d-q_1_rti.rti -o8 test1_0d-u_1_nc.nc -o9 test1_2d-q_1_bov.bov -o10 test1_0d-etrate_1_nc.nc -o11 test1_2d-etrate_1_bov.bov -o12 test1_2d-q_1_rts.rts -o13 test1_2d-etrate_1_nc.nc -o14 test1_2d-u_1_rts.rts -o15 test1_0d-etrate_1_txt.txt -o16 test1_2d-u_1_rti.rti -o17 test1_0d-q_1_nc.nc -o18 test1_2d-etrate_1_rts.rts -o19 baro-gam_60sec_dem_rtg.rtg -o20 test1_2d-d_1_bov.bov -o21 test1_2d-u_1_bov.bov -o22 test1_0d-d_1_nc.nc -o23 test1_2d-etrate_1_rti.rti -o24 test1_2d-q_1_nc.nc -o25 test1_0d-d_1_txt.txt -o26 test1_2d-d_1_nc.nc  -p1 "2015-10-01" -p2 "2018-10-01" -p3 200 -p4 21600.0
+mic   executor.py        DEBUG    exe_arr: ['./run', '-i1', '/tmp/mint/mic/executions/08_05_23_46_49/src/run.zip', '-i2', '/tmp/mint/mic/executions/08_05_23_46_49/src/__met.zip', '-o1', 'test1_0d-q_1_txt.txt', '-o2', 'test1_2d-u_1_nc.nc', '-o3', 'test1_0d-u_1_txt.txt', '-o4', 'test1_log.log', '-o5', 'test1_2d-d_1_rti.rti', '-o6', 'test1_2d-d_1_rts.rts', '-o7', 'test1_2d-q_1_rti.rti', '-o8', 'test1_0d-u_1_nc.nc', '-o9', 'test1_2d-q_1_bov.bov', '-o10', 'test1_0d-etrate_1_nc.nc', '-o11', 'test1_2d-etrate_1_bov.bov', '-o12', 'test1_2d-q_1_rts.rts', '-o13', 'test1_2d-etrate_1_nc.nc', '-o14', 'test1_2d-u_1_rts.rts', '-o15', 'test1_0d-etrate_1_txt.txt', '-o16', 'test1_2d-u_1_rti.rti', '-o17', 'test1_0d-q_1_nc.nc', '-o18', 'test1_2d-etrate_1_rts.rts', '-o19', 'baro-gam_60sec_dem_rtg.rtg', '-o20', 'test1_2d-d_1_bov.bov', '-o21', 'test1_2d-u_1_bov.bov', '-o22', 'test1_0d-d_1_nc.nc', '-o23', 'test1_2d-etrate_1_rti.rti', '-o24', 'test1_2d-q_1_nc.nc', '-o25', 'test1_0d-d_1_txt.txt', '-o26', 'test1_2d-d_1_nc.nc', '-p1', '2015-10-01', '-p2', '2018-10-01', '-p3', '200', '-p4', '21600.0']
+mic   commands.py        WARNING  Run failed
+mic   commands.py        INFO     run done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'run', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
