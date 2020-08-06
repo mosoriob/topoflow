@@ -1,0 +1,295 @@
+!!python/object:modelcatalog.models.model_configuration.ModelConfiguration
+_author: null
+_citation: null
+_compatible_visualization_software: null
+_contributor: null
+_copyright_holder: null
+_date_created: null
+_date_published: null
+_description: null
+_doi: null
+_had_primary_source: null
+_has_assumption: null
+_has_build_file: null
+_has_causal_diagram: null
+_has_component_location:
+- https://raw.githubusercontent.com/mosoriob/topoflow/master/mint_component.zip
+_has_constraint: null
+_has_contact_person: null
+_has_documentation: null
+_has_download_instructions: null
+_has_download_url: null
+_has_equation: null
+_has_example: null
+_has_executable_instructions: null
+_has_executable_notebook: null
+_has_execution_command: null
+_has_explanation_diagram: null
+_has_faq: null
+_has_funding: null
+_has_grid: null
+_has_implementation_script_location: null
+_has_input:
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_data_transformation: null
+  _has_data_transformation_setup: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource:
+  - data_catalog_identifier: FFF-3s5c112e-c7ae-4cda-ba23-2e4f2286a18o
+    description: null
+    id: https://w3id.org/okn/i/mint/
+    label: null
+    type: null
+    value:
+    - /Users/mosorio/tmp/mic_examples/topoflow/data/__met.zip
+  _has_format:
+  - zip
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/23f5b73f-7641-4ec5-8f2d-3dc840916203
+  _label:
+  - __met_zip
+  _path_location: null
+  _position:
+  - 2
+  _type:
+  - DatasetSpecification
+  discriminator: null
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_data_transformation: null
+  _has_data_transformation_setup: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource:
+  - data_catalog_identifier: FFF-3s5c112e-c7ae-4cda-ba23-2e4f2286a18o
+    description: null
+    id: https://w3id.org/okn/i/mint/
+    label: null
+    type: null
+    value:
+    - /Users/mosorio/tmp/mic_examples/topoflow/data/aggregated.zip
+  _has_format:
+  - zip
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/7ee082f6-793c-493b-a912-68350fbab38a
+  _label:
+  - aggregated_zip
+  _path_location: null
+  _position:
+  - 1
+  _type:
+  - DatasetSpecification
+  discriminator: null
+_has_installation_instructions: null
+_has_model_category: null
+_has_model_result_table: null
+_has_output:
+- !!python/object:modelcatalog.models.dataset_specification.DatasetSpecification
+  _description: null
+  _has_data_transformation: null
+  _has_data_transformation_setup: null
+  _has_dimensionality: null
+  _has_file_structure: null
+  _has_fixed_resource: null
+  _has_format:
+  - zip
+  _has_presentation: null
+  _id: https://w3id.org/okn/i/mint/feca78b1-b7ec-430a-baba-b7aecbf432f5
+  _label:
+  - test1_0d-q_1_txt
+  _path_location: null
+  _position:
+  - 1
+  _type:
+  - DatasetSpecification
+  discriminator: null
+_has_output_time_interval: null
+_has_parameter:
+- !!python/object:modelcatalog.models.parameter.Parameter
+  _adjusts_variable: null
+  _description: null
+  _has_accepted_values: null
+  _has_data_type:
+  - float
+  _has_default_value:
+  - 1000.0
+  _has_fixed_value: null
+  _has_maximum_accepted_value: null
+  _has_minimum_accepted_value: null
+  _has_presentation: null
+  _has_step_size: null
+  _id: https://w3id.org/okn/i/mint/67f8e47a-f235-43ca-987f-f9534f53340c
+  _label:
+  - dt_cfg
+  _position:
+  - 3
+  _recommended_increment: null
+  _relevant_for_intervention: null
+  _type:
+  - Parameter
+  _uses_unit: null
+  discriminator: null
+- !!python/object:modelcatalog.models.parameter.Parameter
+  _adjusts_variable: null
+  _description: null
+  _has_accepted_values: null
+  _has_data_type:
+  - string
+  _has_default_value:
+  - '2016-10-01'
+  _has_fixed_value: null
+  _has_maximum_accepted_value: null
+  _has_minimum_accepted_value: null
+  _has_presentation: null
+  _has_step_size: null
+  _id: https://w3id.org/okn/i/mint/e7332f18-388e-4323-92ae-b2b1b9e32a86
+  _label:
+  - start_date
+  _position:
+  - 1
+  _recommended_increment: null
+  _relevant_for_intervention: null
+  _type:
+  - Parameter
+  _uses_unit: null
+  discriminator: null
+- !!python/object:modelcatalog.models.parameter.Parameter
+  _adjusts_variable: null
+  _description: null
+  _has_accepted_values: null
+  _has_data_type:
+  - float
+  _has_default_value:
+  - 20000.0
+  _has_fixed_value: null
+  _has_maximum_accepted_value: null
+  _has_minimum_accepted_value: null
+  _has_presentation: null
+  _has_step_size: null
+  _id: https://w3id.org/okn/i/mint/9f9113e1-eb81-4a31-92b3-9ae5278ad60a
+  _label:
+  - dt
+  _position:
+  - 4
+  _recommended_increment: null
+  _relevant_for_intervention: null
+  _type:
+  - Parameter
+  _uses_unit: null
+  discriminator: null
+- !!python/object:modelcatalog.models.parameter.Parameter
+  _adjusts_variable: null
+  _description: null
+  _has_accepted_values: null
+  _has_data_type:
+  - string
+  _has_default_value:
+  - '2017-10-01'
+  _has_fixed_value: null
+  _has_maximum_accepted_value: null
+  _has_minimum_accepted_value: null
+  _has_presentation: null
+  _has_step_size: null
+  _id: https://w3id.org/okn/i/mint/ebe76810-d03a-42b9-aa1c-fffd151f18e4
+  _label:
+  - end_date
+  _position:
+  - 2
+  _recommended_increment: null
+  _relevant_for_intervention: null
+  _type:
+  - Parameter
+  _uses_unit: null
+  discriminator: null
+_has_process: null
+_has_purpose: null
+_has_region: null
+_has_sample_execution: null
+_has_sample_result: null
+_has_sample_visualization: null
+_has_setup: null
+_has_software_image:
+- !!python/object:modelcatalog.models.software_image.SoftwareImage
+  _author: null
+  _citation: null
+  _compatible_visualization_software: null
+  _contributor: null
+  _copyright_holder: null
+  _date_created: null
+  _date_published: null
+  _description: null
+  _doi: null
+  _had_primary_source: null
+  _has_assumption: null
+  _has_build_file: null
+  _has_contact_person: null
+  _has_documentation: null
+  _has_download_instructions: null
+  _has_download_url: null
+  _has_example: null
+  _has_executable_instructions: null
+  _has_executable_notebook: null
+  _has_execution_command: null
+  _has_faq: null
+  _has_funding: null
+  _has_installation_instructions: null
+  _has_purpose: null
+  _has_sample_visualization: null
+  _has_source_code: null
+  _has_typical_data_source: null
+  _has_usage_notes: null
+  _has_version: null
+  _id: https://w3id.org/okn/i/mint/f84036ce-cbe2-47d7-89c8-8f0c8af7af06
+  _identifier: null
+  _issue_tracker: null
+  _keywords: null
+  _label:
+  - mosorio/topoflow:20.8.6
+  _license: null
+  _logo: null
+  _memory_requirements: null
+  _operating_systems: null
+  _processor_requirements: null
+  _publisher: null
+  _readme: null
+  _reference_publication: null
+  _screenshot: null
+  _short_description: null
+  _software_requirements: null
+  _support_details: null
+  _type:
+  - SoftwareImage
+  _useful_for_calculating_index: null
+  _website: null
+  discriminator: null
+_has_source_code: null
+_has_support_script_location: null
+_has_typical_data_source: null
+_has_usage_notes: null
+_has_version: null
+_id: https://w3id.org/okn/i/mint/0de9cb24-a1e1-40f3-b521-3d7015d7d9c1
+_identifier: null
+_issue_tracker: null
+_keywords: null
+_label:
+- topoflow
+_license: null
+_logo: null
+_memory_requirements: null
+_operating_systems: null
+_processor_requirements: null
+_publisher: null
+_readme: null
+_reference_publication: null
+_screenshot: null
+_short_description: null
+_software_requirements: null
+_support_details: null
+_tag: null
+_type:
+- ModelConfiguration
+_useful_for_calculating_index: null
+_website: null
+discriminator: null
