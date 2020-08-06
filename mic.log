@@ -689,3 +689,37 @@ mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameter
 mic   github.py          INFO     Creating the git repository
 mic   github.py          INFO     Compressing code
 mic   github.py          INFO     Creating a new commit
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/mosorio/tmp/mic_examples/topoflow/mic.yaml', 'data': {'key': 'github_repo_url', 'value': 'https://github.com/mosoriob/topoflow.git'}}
+mic   github.py          INFO     Creating a new version
+mic   github.py          DEBUG    New version: 20.8.14
+mic   github.py          INFO     Pushing changes to the server
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/mosorio/tmp/mic_examples/topoflow/mic.yaml', 'data': {'key': 'version', 'value': '20.8.14'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/mosorio/tmp/mic_examples/topoflow/mic.yaml', 'data': {'key': 'mint_component_url', 'value': 'https://raw.githubusercontent.com/mosoriob/topoflow/master/mint_component.zip'}}
+mic   github.py          INFO     Push complete: {'repository': 'https://github.com/mosoriob/topoflow.git', 'version': '20.8.14'}
+mic   docker.py          INFO     Publish docker image
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/mosorio/tmp/mic_examples/topoflow/mic.yaml', 'data': {'key': 'docker_image', 'value': 'mosorio/topoflow:20.8.14'}}
+mic   commands.py        ERROR    Upload failed: expected string or bytes-like object
+Traceback (most recent call last):
+  File "/Users/mosorio/repos/mic/src/mic/click_encapsulate/commands.py", line 684, in upload
+    model_configuration, profile)
+  File "/Users/mosorio/repos/mic/src/mic/publisher/model_catalog.py", line 104, in publish_model_configuration
+    api_response, model_id, software_version_id = handle_existing_model(profile, api_response_mc, labels, model_cli)
+  File "/Users/mosorio/repos/mic/src/mic/publisher/model_catalog.py", line 124, in handle_existing_model
+    labels = get_show_models_version(selected_model.has_version, software_version_cli)
+  File "/Users/mosorio/repos/mic/src/mic/publisher/model_catalog.py", line 180, in get_show_models_version
+    labels = get_label_from_response([software_version_cli.get_one(obtain_id(i.id)) for i in resources])
+  File "/Users/mosorio/repos/mic/src/mic/publisher/model_catalog.py", line 180, in <listcomp>
+    labels = get_label_from_response([software_version_cli.get_one(obtain_id(i.id)) for i in resources])
+  File "/Users/mosorio/repos/mic/src/mic/_utils.py", line 16, in obtain_id
+    if validators.url(url):
+  File "<decorator-gen-28>", line 2, in url
+  File "/Users/mosorio/.pyenv/versions/3.7.6/envs/mic/lib/python3.7/site-packages/validators/utils.py", line 83, in wrapper
+    value = func(*args, **kwargs)
+  File "/Users/mosorio/.pyenv/versions/3.7.6/envs/mic/lib/python3.7/site-packages/validators/url.py", line 145, in url
+    result = pattern.match(value)
+TypeError: expected string or bytes-like object
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameters': {'mic_file': {'value': '/Users/mosorio/tmp/mic_examples/topoflow/mic.yaml', 'type': 'str'}, 'profile': {'value': 'mosorio', 'type': 'str'}, 'model_configuration': {'value': True, 'type': 'bool'}, 'data_transformation': {'value': None, 'type': 'NoneType'}}}
+mic   github.py          INFO     Creating the git repository
+mic   github.py          INFO     Compressing code
+mic   github.py          INFO     Creating a new commit
