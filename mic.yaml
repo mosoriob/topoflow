@@ -1,6 +1,6 @@
 step: 2
 name: topoflow
-docker_image: topoflow:latest
+docker_image: mosorio/topoflow:20.8.1
 framework: !!python/object/apply:mic.constants.Framework
 - !!python/tuple
   - general
@@ -55,3 +55,6 @@ outputs:
   test1_0d-q_1_txt:
     path: outputs.zip
     format: zip
+github_repo_url: https://github.com/mosoriob/topoflow.git
+version: 20.8.1
+mint_component_url: https://raw.githubusercontent.com/mosoriob/topoflow/master/mint_component.zip
