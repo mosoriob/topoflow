@@ -772,3 +772,33 @@ mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameter
 mic   github.py          INFO     Creating the git repository
 mic   github.py          INFO     Compressing code
 mic   github.py          INFO     Creating a new commit
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/mosorio/tmp/mic_examples/topoflow/mic.yaml', 'data': {'key': 'github_repo_url', 'value': 'https://github.com/mosoriob/topoflow.git'}}
+mic   github.py          INFO     Creating a new version
+mic   github.py          DEBUG    New version: 20.8.17
+mic   github.py          INFO     Pushing changes to the server
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/mosorio/tmp/mic_examples/topoflow/mic.yaml', 'data': {'key': 'version', 'value': '20.8.17'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/mosorio/tmp/mic_examples/topoflow/mic.yaml', 'data': {'key': 'mint_component_url', 'value': 'https://raw.githubusercontent.com/mosoriob/topoflow/master/mint_component.zip'}}
+mic   github.py          INFO     Push complete: {'repository': 'https://github.com/mosoriob/topoflow.git', 'version': '20.8.17'}
+mic   docker.py          INFO     Publish docker image
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/mosorio/tmp/mic_examples/topoflow/mic.yaml', 'data': {'key': 'docker_image', 'value': 'mosorio/topoflow:20.8.17'}}
+mic   commands.py        ERROR    Upload failed: 
+Traceback (most recent call last):
+  File "/Users/mosorio/.pyenv/versions/3.7.6/envs/mic/lib/python3.7/site-packages/click/termui.py", line 200, in confirm
+    value = visible_prompt_func("").lower().strip()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mosorio/repos/mic/src/mic/click_encapsulate/commands.py", line 684, in upload
+    model_configuration, profile)
+  File "/Users/mosorio/repos/mic/src/mic/publisher/model_catalog.py", line 103, in publish_model_configuration
+    if click.confirm("Do you want to use an existing model?", default=True):
+  File "/Users/mosorio/.pyenv/versions/3.7.6/envs/mic/lib/python3.7/site-packages/click/termui.py", line 202, in confirm
+    raise Abort()
+click.exceptions.Abort
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameters': {'mic_file': {'value': '/Users/mosorio/tmp/mic_examples/topoflow/mic.yaml', 'type': 'str'}, 'profile': {'value': 'mosorio_local', 'type': 'str'}, 'model_configuration': {'value': True, 'type': 'bool'}, 'data_transformation': {'value': None, 'type': 'NoneType'}}}
+mic   github.py          INFO     Creating the git repository
+mic   github.py          INFO     Compressing code
+mic   github.py          INFO     Creating a new commit
