@@ -4,7 +4,7 @@ set -e
 . .colors.sh
 
 BASEDIR=$PWD
-. $BASEDIR/io.sh 2 4 26 "$@"
+. $BASEDIR/io.sh 2 4 1 "$@"
 CURDIR=`pwd`
 ## INPUTS VARIABLES
 run_zip=${INPUTS1}

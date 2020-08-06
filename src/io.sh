@@ -98,12 +98,25 @@ export  dt
 umask 0000
 
 
+end_time=$(date -d $end_date +%s)
+start_time=$(date -d $end_date +%s)
+minutes=$(( (end_time - start_time) / 60))
+export minutes
+
 CURDIR=`pwd`
 RUNDIR=$CURDIR/topoflow_run
 export RUNDIR
 
-unzip $run_zip -d $RUNDIR
+mkdir $RUNDIR
+input_dir="${RUNDIR}"
+output_dir="${RUNDIR}/out"
 
+export output_dir
+export input_dir
+
+mkdir -p $(realpath ${output_dir})
+
+unzip $run_zip -d $RUNDIR
 
 mkdir -p $CURDIR/tmp
 unzip $met_zip -d $CURDIR/tmp
@@ -129,9 +142,9 @@ rm topoflow_run/topoflow_cfg/Test1_meteorology.cfg.bk
 if [ ! -f topoflow_run/topoflow_cfg/Test1_path_info.cfg.bk ]; then
   cp topoflow_run/topoflow_cfg/Test1_path_info.cfg topoflow_run/topoflow_cfg/Test1_path_info.cfg.bk
 fi
-
 envsubst < topoflow_run/topoflow_cfg/Test1_path_info.cfg.bk> topoflow_run/topoflow_cfg/Test1_path_info.cfg
 rm topoflow_run/topoflow_cfg/Test1_path_info.cfg.bk
+
 if [ ! -f topoflow_run/topoflow_cfg/Test1_time_info.cfg.bk ]; then
   cp topoflow_run/topoflow_cfg/Test1_time_info.cfg topoflow_run/topoflow_cfg/Test1_time_info.cfg.bk
 fi
