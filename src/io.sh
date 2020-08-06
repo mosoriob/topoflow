@@ -99,7 +99,7 @@ umask 0000
 
 
 end_time=$(date -d $end_date +%s)
-start_time=$(date -d $end_date +%s)
+start_time=$(date -d $start_date +%s)
 minutes=$(( (end_time - start_time) / 60))
 export minutes
 
