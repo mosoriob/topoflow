@@ -382,3 +382,29 @@ mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameter
 mic   github.py          INFO     Creating the git repository
 mic   github.py          INFO     Compressing code
 mic   github.py          INFO     Creating a new commit
+mic   github.py          INFO     Selected repository already exists
+mic   commands.py        ERROR    Upload failed: 
+Traceback (most recent call last):
+  File "/home/mfosorio/.venv/lib/python3.6/site-packages/click/termui.py", line 200, in confirm
+    value = visible_prompt_func("").lower().strip()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mfosorio/.venv/lib/python3.6/site-packages/mic/click_encapsulate/commands.py", line 679, in upload
+    push(mic_config_path.parent, mic_config_path, name, profile)
+  File "/home/mfosorio/.venv/lib/python3.6/site-packages/mic/publisher/github.py", line 35, in push
+    url = check_create_remote_repo(repo, profile, repository_name)
+  File "/home/mfosorio/.venv/lib/python3.6/site-packages/mic/publisher/github.py", line 126, in check_create_remote_repo
+    repo_github = github_create_repo(profile, model_name)
+  File "/home/mfosorio/.venv/lib/python3.6/site-packages/mic/publisher/github.py", line 268, in github_create_repo
+    if not click.confirm("The repo {} exists. Do you want to use it?".format(model_name), default=True):
+  File "/home/mfosorio/.venv/lib/python3.6/site-packages/click/termui.py", line 202, in confirm
+    raise Abort()
+click.exceptions.Abort
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameters': {'mic_file': {'value': '/home/mfosorio/topoflow/topoflow_mic/mic/mic.yaml', 'type': 'str'}, 'profile': {'value': 'mosorio', 'type': 'str'}, 'model_configuration': {'value': True, 'type': 'bool'}, 'data_transformation': {'value': None, 'type': 'NoneType'}}}
+mic   github.py          INFO     Creating the git repository
+mic   github.py          INFO     Compressing code
+mic   github.py          INFO     Creating a new commit
